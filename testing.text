@@ -1,0 +1,5 @@
+// append data to file
+        fs.appendFileSync('data.csv',
+            autoCountUp + ',' + autoCountDown + ',' + autoCoutBalles + ',' + 
+            accountName + ',' + accountTeamTarget + ',' + accountNumberOfQual + 
+            ',' + accountBar + ',' + accountRobot + ',' + overallPoints);

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/site/style.css">
+    <script src="/site/scriptCount.js"></script>
+    <script src="/site/scriptTime.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>NeatTeam#1943 scouting</h1>
+    <h2>end</h2> <br>
+
+   <p>kind of robot:</p>
+  <input type="radio" id="def" name="robot_kind"value="defence">
+  <label for="def">defence:</label><br>
+  <input type="radio" id="att" name="robot_kind"value="attack">
+  <label for="att">attack:</label><br>
+  <input type="radio" id="both" name="robot_kind"value="both">
+  <label for="both">both:</label><br><br>
+  <p>bar clime level:</p>
+  <input type="radio" id="1" name="bar_"value="defence">
+    <label for="1">1st bar:</label><br>
+    <input type="radio" id="2" name="bar_"value="attack">
+    <label for="2">2nd bar:</label><br>
+    <input type="radio" id="3" name="bar_"value="both">
+    <label for="3">3d bar:</label><br>
+    <input type="radio" id="4" name="bar_"value="both">
+    <label for="4">4th bar:</label>
+    <br><br><p id="moreInfo">more information:</p>
+    <input type="textbox" name="text" id="textInfo"><br>
+    <input type="submit" value="SubmitAll" onclick="sendRadio()" id="barSub"><br>
+
+</form>
+<script type="module">  
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.11.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.11.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyA3SMRL28X4ttoBB0owC_8CIN-a7XmD4Xk",
+      authDomain: "scouting-b6ae2.firebaseapp.com",
+      projectId: "scouting-b6ae2",
+      storageBucket: "scouting-b6ae2.appspot.com",
+      messagingSenderId: "706154210076",
+      appId: "1:706154210076:web:a6f2e2252cf663ad8450d9",
+      measurementId: "G-CCLDKL42PR"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+</body>
+</html>
